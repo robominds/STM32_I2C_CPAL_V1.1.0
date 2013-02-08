@@ -423,6 +423,16 @@
               <FileType>1</FileType>
               <FilePath>..\..\..\..\..\Utilities\STM32_EVAL\stm32_eval.c</FilePath>
             </File>
+            <File>
+              <FileName>Printf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\Utilities\STM32_EVAL_CPAL\STM322xG_EVAL\Printf.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm322xg_eval_bmp085_cpal.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\Utilities\STM32_EVAL_CPAL\STM322xG_EVAL\stm322xg_eval_bmp085_cpal.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1503,6 +1513,16 @@
               <FileName>stm32_eval.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\..\..\Utilities\STM32_EVAL\stm32_eval.c</FilePath>
+            </File>
+            <File>
+              <FileName>Printf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\Utilities\STM32_EVAL_CPAL\STM322xG_EVAL\Printf.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm322xg_eval_bmp085_cpal.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\Utilities\STM32_EVAL_CPAL\STM322xG_EVAL\stm322xg_eval_bmp085_cpal.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -2585,6 +2605,16 @@
               <FileType>1</FileType>
               <FilePath>..\..\..\..\..\Utilities\STM32_EVAL\stm32_eval.c</FilePath>
             </File>
+            <File>
+              <FileName>Printf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\Utilities\STM32_EVAL_CPAL\STM322xG_EVAL\Printf.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm322xg_eval_bmp085_cpal.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\Utilities\STM32_EVAL_CPAL\STM322xG_EVAL\stm322xg_eval_bmp085_cpal.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -3342,7 +3372,7 @@
             <RestoreToolbox>1</RestoreToolbox>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
-          <TargetSelection>1</TargetSelection>
+          <TargetSelection>7</TargetSelection>
           <SimDlls>
             <CpuDll></CpuDll>
             <CpuDllArguments></CpuDllArguments>
@@ -3356,7 +3386,7 @@
             <PeripheralDll></PeripheralDll>
             <PeripheralDllArguments></PeripheralDllArguments>
             <InitializationFile></InitializationFile>
-            <Driver>BIN\UL2CM3.DLL</Driver>
+            <Driver>Segger\JL2CM3.dll</Driver>
           </TargetDlls>
         </DebugOption>
         <Utilities>
@@ -3366,9 +3396,9 @@
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
             <Capability>1</Capability>
-            <DriverSelection>4096</DriverSelection>
+            <DriverSelection>4099</DriverSelection>
           </Flash1>
-          <Flash2>BIN\UL2CM3.DLL</Flash2>
+          <Flash2>Segger\JL2CM3.dll</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
         </Utilities>
@@ -3626,6 +3656,16 @@
               <FileName>stm32_eval.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\..\..\Utilities\STM32_EVAL\stm32_eval.c</FilePath>
+            </File>
+            <File>
+              <FileName>Printf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\Utilities\STM32_EVAL_CPAL\STM322xG_EVAL\Printf.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm322xg_eval_bmp085_cpal.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\Utilities\STM32_EVAL_CPAL\STM322xG_EVAL\stm322xg_eval_bmp085_cpal.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -4232,6 +4272,60 @@
         </Group>
         <Group>
           <GroupName>User</GroupName>
+          <GroupOption>
+            <CommonProperty>
+              <UseCPPCompiler>0</UseCPPCompiler>
+              <RVCTCodeConst>0</RVCTCodeConst>
+              <RVCTZI>0</RVCTZI>
+              <RVCTOtherData>0</RVCTOtherData>
+              <ModuleSelection>0</ModuleSelection>
+              <IncludeInBuild>2</IncludeInBuild>
+              <AlwaysBuild>2</AlwaysBuild>
+              <GenerateAssemblyFile>2</GenerateAssemblyFile>
+              <AssembleAssemblyFile>2</AssembleAssemblyFile>
+              <PublicsOnly>2</PublicsOnly>
+              <StopOnExitCode>11</StopOnExitCode>
+              <CustomArgument></CustomArgument>
+              <IncludeLibraryModules></IncludeLibraryModules>
+            </CommonProperty>
+            <GroupArmAds>
+              <Cads>
+                <interw>2</interw>
+                <Optim>0</Optim>
+                <oTime>2</oTime>
+                <SplitLS>2</SplitLS>
+                <OneElfS>2</OneElfS>
+                <Strict>2</Strict>
+                <EnumInt>2</EnumInt>
+                <PlainCh>2</PlainCh>
+                <Ropi>2</Ropi>
+                <Rwpi>2</Rwpi>
+                <wLevel>0</wLevel>
+                <uThumb>2</uThumb>
+                <VariousControls>
+                  <MiscControls></MiscControls>
+                  <Define></Define>
+                  <Undefine></Undefine>
+                  <IncludePath>..\..\..\..\..\Utilities\STM32_EVAL_CPAL\STM322xG_EVAL</IncludePath>
+                </VariousControls>
+              </Cads>
+              <Aads>
+                <interw>2</interw>
+                <Ropi>2</Ropi>
+                <Rwpi>2</Rwpi>
+                <thumb>2</thumb>
+                <SplitLS>2</SplitLS>
+                <SwStkChk>2</SwStkChk>
+                <NoWarn>2</NoWarn>
+                <VariousControls>
+                  <MiscControls></MiscControls>
+                  <Define></Define>
+                  <Undefine></Undefine>
+                  <IncludePath></IncludePath>
+                </VariousControls>
+              </Aads>
+            </GroupArmAds>
+          </GroupOption>
           <Files>
             <File>
               <FileName>main.c</FileName>

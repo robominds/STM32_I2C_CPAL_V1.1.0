@@ -125,8 +125,8 @@ extern "C" {
   
 #define CPAL_I2C1_SDA_GPIO_PORT         GPIOB       
 #define CPAL_I2C1_SDA_GPIO_CLK          RCC_AHB1Periph_GPIOB 
-#define CPAL_I2C1_SDA_GPIO_PIN          GPIO_Pin_9 
-#define CPAL_I2C1_SDA_GPIO_PINSOURCE    GPIO_PinSource9  
+#define CPAL_I2C1_SDA_GPIO_PIN          GPIO_Pin_7
+#define CPAL_I2C1_SDA_GPIO_PINSOURCE    GPIO_PinSource7
   
 /*-----------I2C2 Device -----------*/
   
